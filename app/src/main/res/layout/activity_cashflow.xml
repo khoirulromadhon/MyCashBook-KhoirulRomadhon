@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/invertLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CashflowActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        >
+
+        <TextView
+            android:id="@+id/judulDetailCashflow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail Cash Flow"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_gravity="left"
+            android:fontFamily="sans-serif-black">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_cashflow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/et_style"/>
+
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/orangepastel"
+        android:gravity="center"
+        android:text="Kembali"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:layout_margin="20dp"/>
+
+</LinearLayout>

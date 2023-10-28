@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BerandaActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginVertical="20dp">
+
+                <TextView
+                    android:id="@+id/judulberanda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Rangkuman Bulan Ini"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-medium">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/judulpemasukan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/judulpengeluaran"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Pemasukan"
+                        android:textColor="@color/green"
+                        android:textSize="20dp"
+                        android:layout_marginVertical="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/jumlahPemasukan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="......"
+                        android:textColor="@color/green"
+                        android:textSize="20dp"
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginStart="5dp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/judulpengeluaran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/judulberanda"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Pengeluaran"
+                        android:textColor="@color/red"
+                        android:textSize="20dp"
+                        android:layout_marginVertical="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/jumlahPengeluaran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="....."
+                        android:textColor="@color/red"
+                        android:textSize="20dp"
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginStart="5dp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id = "@+id/mainGrid"
+                android:rowCount = "2"
+                android:columnCount = "2"
+                android:alignmentMode="alignBounds"
+                android:columnOrderPreserved = "false"
+                android:layout_weight = "8"
+                android:padding = "10dp"
+                android:layout_gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom = "10dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="10dp">
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity = "center_horizontal"
+                        android:layout_margin = "16dp">
+
+                        <ImageButton
+                            android:id="@+id/imgbtnincome"
+                            android:transitionName="fade_trans"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="false"
+                            android:background="@color/white"
+                            android:scaleType="fitCenter"
+                            android:layout_height="100dp"
+                            android:layout_width="100dp"
+                            android:src="@drawable/income"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_gravity = "center_vertical"
+                        android:layout_margin = "20dp"
+                        android:layout_width = "100dp"
+                        android:layout_height = "wrap_content">
+                        <TextView
+                            android:id="@+id/textPemasukan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="100dp"
+                            android:textAlignment="center"
+                            android:text="Tambah Pemasukan"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom = "10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_gravity = "center_horizontal"
+                        android:layout_margin = "16dp"
+                        android:layout_width = "100dp"
+                        android:layout_height = "wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/imgbtnexpense"
+                            android:transitionName="fade_trans"
+                            android:src="@drawable/expense"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="false"
+                            android:background="@color/white"
+                            android:scaleType="fitCenter"
+                            android:layout_height="100dp"
+                            android:layout_width="100dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity = "center_vertical"
+                        android:layout_margin = "20dp"
+                        android:layout_width = "100dp"
+                        android:layout_height = "wrap_content">
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="100dp"
+                            android:textAlignment="center"
+                            android:text="Tambah Pengeluaran"
+                            android:textSize="16sp"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom = "10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_gravity = "center_horizontal"
+                        android:layout_margin = "16dp"
+                        android:layout_width = "100dp"
+                        android:layout_height = "wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/imgbtncashflow"
+                            android:transitionName="fade_trans"
+                            android:src="@drawable/moneyflow"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="false"
+                            android:background="@color/white"
+                            android:scaleType="fitCenter"
+                            android:layout_height="100dp"
+                            android:layout_width="100dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity = "center_vertical"
+                        android:layout_margin = "20dp"
+                        android:layout_width = "100dp"
+                        android:layout_height = "wrap_content">
+                        <TextView
+                            android:id="@+id/textDetailCashFlow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="100dp"
+                            android:textAlignment="center"
+                            android:text="Detail Cash Flow"
+                            android:textSize="16sp"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom = "16dp">
+
+                    <LinearLayout
+                        android:layout_gravity = "center_horizontal"
+                        android:layout_margin = "16dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/imgbtnsetting"
+                            android:transitionName="fade_trans"
+                            android:src="@drawable/settings"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="false"
+                            android:background="@color/white"
+                            android:scaleType="fitCenter"
+                            android:layout_height="100dp"
+                            android:layout_width="100dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_gravity = "center_vertical"
+                        android:layout_margin = "20dp"
+                        android:layout_width = "100dp"
+                        android:layout_height = "wrap_content">
+
+                        <TextView
+                            android:id="@+id/textPengaturan"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="115dp"
+                            android:textAlignment="center"
+                            android:text="Pengaturan"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </LinearLayout>
+</LinearLayout>

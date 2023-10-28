@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PengeluaranActivity"
+    android:id="@+id/pengeluaranLayout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="left"
+            android:layout_marginVertical="20dp"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/judulTambahPengeluaran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tambah Pengeluaran"
+                android:textColor="@color/red"
+                android:textSize="20dp"
+                android:layout_gravity="left"
+                android:fontFamily="sans-serif-black">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textTanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal : "
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_gravity="left"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="10dp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp">
+
+                <EditText
+                    android:id="@+id/editTgglPengeluaran"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/et_style"
+                    android:hint="Masukkan Tanggal"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:typeface="monospace" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/calendar"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textNominal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nominal : "
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_gravity="left"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="10dp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/editNominalPengeluaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Nominal"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/textKeterangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keterangan : "
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_gravity="left"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="10dp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/editKeteranganPengeluaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Keterangan"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:typeface="monospace" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/greenpastel"
+                android:gravity="center"
+                android:text="Simpan"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnKembali"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/orangepastel"
+                android:gravity="center"
+                android:text="Kembali"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
